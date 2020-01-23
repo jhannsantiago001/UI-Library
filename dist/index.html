@@ -4,9 +4,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        body{ font-size: 1.5em;}
+        .container{margin: 40px; margin-top: 60px;}
+    </style>
 </head>
 <body>
-    
+    <h1>UI Library</h1>
+    <h3>tooltip</h3>
+    <div class = "container">
+        <!-- tooltip -->
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Recusandae quaerat omnis, <span class = "tooltip" data-message = "I'm a tooltip!">eaque</span> molestias ex minima temporibus 
+        doloremque nulla beatae sequi.
+    </div>
+    <h3>Dropdown</h3>
+
+    <div class="dropdown">
+        <div class="trigger">Cool Sticker Printing</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Rerum perspiciatis veritatis explicabo perferendis, 
+                corrupti fuga assumenda dolor optio adipisci error?</p>
+        </div>
+    </div>    
+    <div class="dropdown">
+        <div class="trigger">Cool Sticker Printing</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Rerum perspiciatis veritatis explicabo perferendis, 
+                corrupti fuga assumenda dolor optio adipisci error?</p>
+        </div>
+    </div>
+    <!-- tabs -->
+    <h3>tabs</h3>
+
+    <div class="tabs">
+        <ul>
+            <li class="trigger active" data-target = "about">About</li>
+            <li class="trigger" data-target = "delivery">Delivery Info</li>
+            <li class="trigger" data-target = "return">Return Info</li>
+        </ul>
+        <div id="about" class="content active">
+            <h2>about</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Doloribus adipisci nostrum veniam. Qui commodi voluptatibus
+                dolores. Incidunt nobis mollitia maiores.
+            </p>
+        </div>
+        <div id="delivery" class="content">
+            <h2>delivery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Doloribus adipisci nostrum veniam. Qui commodi voluptatibus
+                dolores. Incidunt nobis mollitia maiores.
+            </p>
+        </div>
+        <div id="return" class="content">
+            <h2>return</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Doloribus adipisci nostrum veniam. Qui commodi voluptatibus
+                dolores. Incidunt nobis mollitia maiores.
+            </p>
+        </div>
+        <div id="delivery" class="content">
+            <h2>delivery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Doloribus adipisci nostrum veniam. Qui commodi voluptatibus
+                dolores. Incidunt nobis mollitia maiores.
+            </p>
+        </div>
+    </div>
     <script src = "./assets/bundle.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@ module.exports = {
         contentBase: path.resolve(__dirname, 'dist'),
         publicPath: '/assets/'
     },
-    module: {
+    module: {   
         rules: [{
             test: /\.js$/,
             exclude: /node_modules/,
@@ -20,6 +20,11 @@ module.exports = {
                     presets: ['@babel/preset-env']
                 }
             }
-        }]
+        },
+        {
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader']
+        }
+    ]
     }
 };
